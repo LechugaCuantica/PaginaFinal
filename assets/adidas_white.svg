@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg width="121" height="100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clip0_4739_15139">
+   <rect fill="white" height="100" id="svg_1" transform="translate(0.800049)" width="120"/>
+  </clipPath>
+  <clipPath id="clip1_4739_15139">
+   <rect fill="white" height="71.18" id="svg_2" transform="translate(2 0)" width="120" x="0.8" y="14"/>
+  </clipPath>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g clip-path="url(#clip0_4739_15139)" id="svg_3">
+   <g clip-path="url(#clip1_4739_15139)" id="svg_4">
+    <path d="m90.96,85.18l-33.1,-57.52l23.78,-13.66l41.16,71.18l-31.84,0z" fill="#ffffff" id="svg_5"/>
+    <path d="m2.8,77.12l23.78,-13.75l12.58,21.81l-31.75,0l-4.61,-8.06z" fill="#ffffff" id="svg_6"/>
+    <path d="m30.67,52.7l23.78,-13.72l26.67,46.2l-31.65,-0.03l-18.8,-32.45z" fill="#ffffff" id="svg_7"/>
+   </g>
+  </g>
+ </g>
+</svg>

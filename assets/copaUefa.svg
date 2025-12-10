@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clip0_6995_1379">
+   <rect fill="white" height="31.8" id="svg_1" transform="translate(11.6848 4.10002)" width="16.63"/>
+  </clipPath>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g clip-path="url(#clip0_6995_1379)" id="svg_2">
+   <path d="m22.84,23.38c3.76,-17.1 5.16,-18.68 5.16,-18.68l-16,0c0,0 1.4,1.58 5.16,18.68l0,0.64c-3.22,9.97 -4.01,10.89 -4.01,10.89c0,0 2.2,0.38 6.85,0.38c4.66,0 6.85,-0.38 6.85,-0.38c0,0 -0.79,-0.92 -4.01,-10.89l0,-0.64l0,0z" fill="#ffffff" id="svg_3"/>
+  </g>
+ </g>
+</svg>

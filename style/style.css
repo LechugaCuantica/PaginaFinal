@@ -1,0 +1,469 @@
+/* Variables para los colores principales */
+:root {
+    --primaryColor: #0f2145;
+    --secondaryColor: #3e31fa;
+}
+
+/* el color de la letra para toda la web */
+* {
+    color: var(--primaryColor);
+}
+
+/* Estilo para las listas */
+li {
+    list-style: none;
+}
+
+
+
+.text-color-primary {
+    color: var(--primaryColor) !important;
+}
+
+.text-color-secondary {
+    color: var(--secondaryColor) !important;
+}
+
+
+/* Estilo para la fuente personalizada */
+.fw-oswald {
+    font-family: "Oswald" !important;
+}
+
+/* Estilo personzalido para los links del navbar */
+.nav-item-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: var(--primaryColor);
+    text-decoration: none;
+    background: none;
+    border: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-item-link:hover {
+    color: var(--secondaryColor);
+}
+
+.nav-item-active {
+    color: var(--secondaryColor);
+}
+
+/* Border personalizado */
+.border-color {
+    border-color: var(--primaryColor);
+}
+
+/* Video del ifframe */
+.videoHeroSection {
+    width: 100%;
+    height: 100vh;
+}
+
+.tablePositions {
+    background-color: #f3f5f8;
+}
+
+/* Fondos para las tablas y los ultimos partidos */
+.theLastMatches {
+    background-color: var(--primaryColor);
+}
+
+.nextMatches {
+    background-color: var(--primaryColor);
+}
+
+.positions {
+    background-color: var(--primaryColor);
+}
+
+/* Color para las tablas */
+th,
+td {
+    color: white !important;
+}
+
+/* Estilo personalizado para que la tabla de bootstrap sea transparente */
+.table-transparent {
+    background-color: transparent !important;
+}
+
+.table-transparent th,
+.table-transparent td {
+    background-color: transparent !important;
+    border: none;
+}
+
+/* Background para la imagen con estilo de papel */
+.background {
+    background-image: url("/assets/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Background para la imagen del estadio */
+.backgroundImageStadium {
+    background-image: url("/assets/1223489-25520325-2560-1440.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Cambiar la altura de las imagenes del carusel para movil  */
+.carousel-item img {
+    height: 10em;
+}
+
+/* Estilos para la imagen del sponsor HP */
+.sponsorImg img {
+    height: 20em;
+}
+
+.cardMedical {
+    cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.cardMedical:hover {
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+.cardMedical p {
+    height: auto;
+    border-left: var(--primaryColor) solid;
+}
+
+.cardMedical img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Tarjeta pequeña para la fecha de los partes medicos */
+.dateCard {
+    background-color: var(--primaryColor);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+/* Icono de compartir de los partes medicos */
+.shareIcon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.theLastMatches {
+    width: 100%;
+}
+
+/* Carusel para un scroll horizontal */
+.carousel-x {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+/* Tarjetas de los productos */
+.cardProduct {
+    cursor: pointer;
+    min-width: 20rem;
+}
+
+/* fondo para el contenido de la tarjeta del producto */
+.cardProduct .cardContent {
+    background-color: #0c1a38;
+}
+
+/* Tarjeta de las conferencias de prensa */
+.prensaCard {
+    background-color: #0c1a38;
+    min-width: 20rem;
+    max-width: 20rem;
+    min-height: 500px;
+}
+
+/* Fecha de la conferencia de prensa */
+.prensaCard span {
+    background-color: var(--secondaryColor);
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+/*Imagen de la conferencia de prensa */
+.prensaCard img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    max-height: 20rem;
+}
+
+.prensaCard p {
+    height: auto;
+    border-left: var(--secondaryColor) solid;
+}
+
+.prensaCard a {
+    background-color: rgba(128, 128, 128, 0.182);
+}
+
+/* Para que el boton cambie de tamaño al hacer hover */
+.prensaCard .btn-secondary:hover {
+    transform: scale(85%);
+}
+
+/* Se cambie el boton primario de boostrap con el color primario */
+.btn-primary {
+    background-color: var(--primaryColor) !important;
+    border-color: var(--primaryColor) !important;
+}
+
+.btn-primary:hover {
+    background-color: #0c1a38 !important;
+    border-color: #0c1a38 !important;
+}
+
+/* Se cambie el boton secundario de boostrap con el color secundario */
+.btn-secondary {
+    background-color: var(--secondaryColor) !important;
+    border-color: var(--secondaryColor) !important;
+}
+
+.btn-secondary:hover {
+    background-color: #3e31fa81 !important;
+    border-color: #3e31fa81 !important;
+    transition: transform;
+    transition-duration: 500ms;
+}
+
+/* Se pone en wrap en moviles para que en filas */
+.linksCard {
+    flex-wrap: wrap;
+}
+
+/* Tamaño de las tarjetas de los links */
+.cardLinks {
+    width: 100%;
+    height: 5rem;
+}
+
+/* Tarjeta de los links con la imagen de fondo con zoom */
+.zoom-card {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Imagen de la tarjeta */
+.zoom-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s ease;
+}
+
+/* Titulo de la tarjeta */
+.zoom-card h5 {
+    bottom: 0;
+    left: 10px;
+    z-index: 50;
+
+}
+
+/* Estilos psudo-elemento para la tarjeta de links  */
+.zoom-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.4s ease;
+}
+
+.zoom-card:hover::after {
+    opacity: 0;
+}
+
+/* Se escala la imagen */
+.zoom-card:hover img {
+    transform: scale(1.2);
+}
+
+/* Video de la deciquinta champion */
+.video15 {
+    width: 100%;
+    height: 35rem !important;
+}
+
+/* se pone para que el carosuel quede por encima del contenedor padre */
+.trophies .position-relative {
+    margin-top: -7rem;
+    z-index: 49;
+}
+
+/* Imagen de los sponsors */
+.trophies .sponsorsImg img {
+    width: 100%;
+    height: 10rem;
+}
+
+/* wrap para movil  */
+.trophies .sponsorsImg {
+    flex-wrap: wrap;
+}
+
+/* Tarjeta de los trofeos */
+.trophieCard {
+    width: calc(50% - 10px);
+    background-image: url("/assets/bgTrophies.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/* numero del trofeo  */
+.trophieCard h2 {
+    font-size: 2rem;
+}
+
+/* Tamaño de las tarjetas zoom de fotos historicas */
+.historicalCard {
+    width: 15rem;
+    height: 15rem;
+}
+
+
+/* Media queries para responsive  */
+@media (min-width: 576px) {
+    .tablePositions {
+        margin-top: 20px;
+    }
+
+    .backgroundImageStadium {
+        min-height: 20rem;
+    }
+
+    .trophies .position-relative {
+        margin-top: -10rem;
+    }
+
+    .carousel-item img,
+    .sponsorImg img {
+        height: 20em;
+    }
+}
+
+@media (min-width: 768px) {
+    .theLastMatches {
+        width: 50%;
+    }
+
+    .contact {
+        width: fit-content;
+        margin: 0 auto;
+        column-count: 2;
+    }
+
+    .video15 {
+        height: 100%;
+    }
+
+    .trophieCard {
+        width: calc(25% - 21px);
+    }
+
+    .trophieCard h2 {
+        font-size: 5rem;
+    }
+
+    .trophieCard img {
+        width: 150px;
+    }
+
+    .trophies .sponsorsImg {
+        flex-wrap: nowrap;
+    }
+
+    .idolsPhotos p {
+        width: 50%;
+    }
+
+    .cardLinks {
+        width: 20em;
+        height: 20em;
+    }
+
+    .linksCard {
+        flex-wrap: nowrap;
+    }
+
+    .historicalCard {
+        width: 15rem;
+        height: 25rem;
+    }
+
+    .carousel {
+        width: 75%;
+    }
+
+    .cardMedical img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .tablePositions {
+        position: relative;
+        margin-top: -10em;
+
+    }
+
+    .sidesLinks {
+        width: 25%;
+    }
+
+    .carousel-item img,
+    .sponsorImg img {
+        height: 20em;
+    }
+}
+
+@media (min-width: 992px) {
+    .theLastMatches {
+        width: auto;
+    }
+
+    .trophies .sponsorsImg img {
+        width: 100%;
+        height: 15rem;
+    }
+
+    .carousel-item img,
+    .sponsorImg img {
+        height: 25em;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .carousel-item img,
+    .sponsorImg img {
+        height: 30em;
+    }
+}
+
+@media (min-width: 1400px) {
+    .trophies .sponsorsImg img {
+        width: 100%;
+        height: 20rem;
+    }
+}
