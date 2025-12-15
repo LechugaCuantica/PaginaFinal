@@ -1,0 +1,40 @@
+.card-opacity {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+}
+
+.card-opacity img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-opacity::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transition: all 1s ease;
+}
+
+.card-opacity:hover::after {
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 1s ease;
+}
+
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    .textContainer {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

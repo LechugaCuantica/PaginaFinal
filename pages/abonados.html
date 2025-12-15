@@ -24,7 +24,7 @@
     <header class="header bg-white p-3 d-md-flex d-none justify-content-between">
         <div class="links d-flex flex-wrap gap-2 align-items-center ">
             <!-- Links -->
-            <a href="" class="text-decoration-none text-color  border-end border-2  pe-2 ">
+            <a href="./licenciatarios.html" class="text-decoration-none text-color  border-end border-2  pe-2 ">
                 LICENCIATARIOS
             </a>
             <a href="" class="text-decoration-none text-color  border-end border-2  pe-2 ">
@@ -193,13 +193,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item-link" href="#">
+                        <a class="nav-item-link" href="./escuela.html">
                             <i class="fa-solid fa-futbol"></i>
                             Escuela
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item-link" href="#">
+                        <a class="nav-item-link" href="./tienda.html">
                             <i class="fa-solid fa-shirt"></i>
                             Tienda
                         </a>
@@ -356,9 +356,9 @@
         <div class="d-flex justify-content-center gap-md-5 gap-2">
             <a class="text-white fw-oswald text-decoration-none" href="../index.html">INICIO</a>
             <a class="text-white fw-oswald text-decoration-none" href="./abonados.html">ABONADOS</a>
-            <a class="text-white fw-oswald text-decoration-none" href="">BOLETERÍA</a>
-            <a class="text-white fw-oswald text-decoration-none" href="">ESCUELA</a>
-            <a class="text-white fw-oswald text-decoration-none" href="">TIENDA</a>
+            <a class="text-white fw-oswald text-decoration-none" href="./boleteria.html">BOLETERÍA</a>
+            <a class="text-white fw-oswald text-decoration-none" href="./escuela.html">ESCUELA</a>
+            <a class="text-white fw-oswald text-decoration-none" href="./tienda.html">TIENDA</a>
         </div>
         <div class="d-flex justify-content-center gap-md-5 gap-2  mt-3">
             <a class="text-white fw-oswald text-decoration-none" href="">NOTICIAS</a>
@@ -448,41 +448,58 @@
                             </div>
                         </div>
                         <div class="row">
+                            <!-- Nombre -->
                             <div class="col-6">
                                 <div class="form-floating mb-3">
-                                    <input id="name" name="name" type="text" class="form-control" placeholder="">
+                                    <input id="name" name="name" type="text" class="form-control" placeholder="Nombre"
+                                        required minlength="3" maxlength="50" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$"
+                                        title="El nombre solo debe contener letras y espacios (mínimo 3 caracteres)">
                                     <label for="name">Nombre</label>
                                 </div>
                             </div>
+
+                            <!-- Correo -->
                             <div class="col-6">
                                 <div class="form-floating mb-3">
-                                    <input id="email" name="email" type="email" class="form-control" placeholder="">
+                                    <input id="email" name="email" type="email" class="form-control"
+                                        placeholder="Correo electrónico" required maxlength="100"
+                                        title="Introduce un correo electrónico válido">
                                     <label for="email">Correo electrónico</label>
                                 </div>
                             </div>
                         </div>
+
                         <div class="row">
+                            <!-- Detalles -->
                             <div class="col">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="" id="datails" name="details"
-                                        style="height: 100px;"></textarea>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="details" name="details"
+                                        placeholder="Detalla tu solicitud" required minlength="10" maxlength="500"
+                                        style="height: 100px;"
+                                        title="Describe tu solicitud con al menos 10 caracteres"></textarea>
                                     <label for="details">Detalla tu solicitud</label>
                                 </div>
                             </div>
                         </div>
+
                         <div class="row mt-3">
+                            <!-- Archivo -->
                             <div class="col">
                                 <div class="mb-3">
-                                    <label for="formFile" class="form-label">Elige un archivo en caso de ser
-                                        necesario</label>
-                                    <input class="form-control" type="file" id="formFile">
+                                    <label for="formFile" class="form-label">
+                                        Elige un archivo (opcional)
+                                    </label>
+                                    <input class="form-control" type="file" id="formFile" name="file"
+                                        accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+                                    <div class="form-text">
+                                        Formatos permitidos: PDF, JPG, PNG, DOC (máx. recomendado 5MB)
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
                 </form>
             </div>
         </div>
